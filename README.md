@@ -2,7 +2,8 @@
 
 Se ha omitido el archivo src/environments/environment.ts que almacena las credenciales de conexión a Firebase. Se debe crear a partir de los datos proporcionados en la web de Firebase, con el siguiente formato:
 
-```export const environment = {
+```
+export const environment = {
   production: false,
   firebase: {
     apiKey: "############",
