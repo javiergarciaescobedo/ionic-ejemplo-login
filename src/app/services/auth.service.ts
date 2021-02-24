@@ -32,12 +32,9 @@ export class AuthService {
   doLogout(){
     return new Promise((resolve, reject) => {
       this.afAuth.auth.signOut()
-      .then(() => {
-        resolve();
-      }).catch((error) => {
-        console.log(error);
-        reject();
-      });
+      .then(
+        res => resolve(res),
+        err => reject(err))
     })
   }
 }
